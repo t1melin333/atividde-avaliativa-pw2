@@ -15,7 +15,7 @@
     $produto = new Produtos($conn);
     $produto_atual = $produto->consultarPorId( $id);
 
-    if (!$tarefa_atual) {
+    if (!$produto_atual) {
         echo '<p style="color: red; text-align: center;">Produto não encontrado.</p>';
         echo '<p style="text-align: center;"><a href="/">Voltar para a lista de produtos</a></p>';
         exit;
